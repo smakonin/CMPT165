@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CMPT 165 Lab 9</title>
+<link rel="stylesheet" href="common.css" title="Common" type="text/css" media="all" id="style-common" />
+</head>
+<body>
+<div id="header">
+<h1><abbr title="Computing Science" class="obvious">CMPT</abbr> 165 Lab 9</h1>
+<h1>&nbsp;</h1>
+</div>
+
+<div id="main">
+
+<p>
+This lab is intended to get you started working with form input.
+</p>
+
+<ol class="labsteps">
+<li>
+<p>
+Create an <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> form that asks the use for their name and their age.  Name this file <code class="file">age.html</code>.  The &#8220;action&#8221; of this form should be the Python program you create below.
+</p>
+<p>
+Create a web script that takes the form data from that page.  Name this file <code class="file">result.py</code>.  It should create <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> with content like this (inside the <code class="html">&lt;body&gt;</code>):
+</p>
+<div class="blockcode">
+<code class="html">&lt;p&gt;Hello, <var>name</var>.&lt;/p&gt;<br />
+&lt;p&gt;Next year, you will be <var>X</var> years old.&lt;/p&gt;</code>
+</div>
+<p>
+The word <code class="html"><var>name</var></code> should be replaced with the name the user entered.  The <code class="html"><var>X</var></code> should be replaced with the age they entered plus one.
+</p>
+<p>
+In order to add one to the age the user enters, you will have to convert it to a number.  This can be done with the <code class="python">int</code> function, as in <code class="python">int(form.getvalue("age"))</code>.
+</p>
+</li>
+<li>
+<p>
+First, check your <code class="file">age.html</code> file and make sure it's valid.
+</p>
+<p>
+The <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> code that your program generates should also be valid <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr>.  That means (among other things) that your program will have to print out a doctype.  You can check the validity in one of two ways.
+</p>
+<p>
+When your page is online an functioning, you can copy-and-paste the <abbr title="Uniform Resource Locator">URL</abbr> with the query string to the validator.  The <abbr title="Uniform Resource Locator">URL</abbr> will be something like this:
+</p>
+<div class="blockcode">
+<code class="url">http://cmpt165.csil.sfu.ca/~<var>userid</var>/lab9/result.py?name=Your%20Name&amp;age=20</code>
+</div>
+<p>
+The other option is to view the result page, view the page source in your browser, and copy-and-paste the code into the &#8220;enter <abbr title="HyperText Markup Language" class="obvious">HTML</abbr> code directly&#8221; section in a validator.
+</p>
+
+</li>
+</ol>
+
+<p>
+Submit the <abbr title="Uniform Resource Locator">URL</abbr> of the form page to <a href="https://courses.cs.sfu.ca/">CourSys</a>.
+</p>
+
+</div>
+<div id="footer">
+<p id="footlink">Return to <a href="../index.html">Home</a>.</p>
+<p id="footcopy"><a href="http://www2.cs.sfu.ca/~ggbaker/copyright">Copyright</a> &copy; <a href="http://www2.cs.sfu.ca/~ggbaker/" rel="author">Greg Baker</a>, last modified 2012-01-05.</p>
+</div>
+</body>
+</html>
+
+

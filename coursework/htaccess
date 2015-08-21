@@ -1,0 +1,3 @@
+AuthType CAS
+AuthName "CMPT 165 D100 Students Only"
+Require sfu-user smakonin suraiyah songyaos liyuew !cmpt-165-d1

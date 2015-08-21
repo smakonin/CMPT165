@@ -1,0 +1,124 @@
+h1 abbr[title], h1 acronym[title] {
+  border-bottom-width: 0;
+}
+h2 abbr[title], h2 acronym[title] {
+  border-bottom-width: 0;
+}
+abbr[title].obvious, acronym[title].obvious {
+  border-bottom-width: 0;
+  font-style: normal;
+}
+
+
+.collapsible {
+  color: #0054a6;
+  cursor: pointer;
+  cursor: hand; /* IE crud */
+}
+span.icon {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: smaller;
+  color: #0054a6;
+}
+
+
+li div, li ul { /* IE doesn't space this by default */
+  margin-bottom: 1em;
+}
+
+a.subtle img {
+  border-width: 0;
+}
+div.figure {
+  text-align: center;
+  overflow: auto;
+}
+img.bordered {
+  border: thin #000 solid;
+  padding: 0;
+}
+img.screenshot {
+  border: thin #000 dashed;
+  padding: 4px;
+}
+p.caption {
+  font-size: smaller;
+  font-family: sans-serif;
+  margin-top: 0;
+  padding-top: 0;
+}
+img.illust {
+  float: right;
+  margin-left: 0.5em;
+}
+
+p.currentinfo {
+  color: #fff;
+  background-color: #b5111b;
+  padding: 0.75em;
+  font-weight: bold;
+}
+p.currentinfo a {
+  color: #9cf;
+}
+p.currentinfo strong {
+  text-transform: uppercase;
+}
+
+div.blockcode, div.displaymath {
+  margin: 1em 2.5em;
+  line-height: 1em;
+  text-align: left;
+}
+div.codeblock {
+  margin-left: 3ex;
+  line-height: 1em;
+}
+div.samplerun {
+  font-family: monospace;
+  margin: .5em 2.5em;
+  padding: .5ex;
+  border: thin dotted #777;
+}
+kbd {
+  font-weight: bold;
+}
+
+
+.html {
+  color: #a00;
+  background-color: transparent;
+}
+.css {
+  color: #080;
+  background-color: transparent;
+}
+.file {
+  color: #770;
+  background-color: transparent;
+}
+.python {
+  color: #607;
+  background-color: transparent;
+}
+.url {
+  color: #007;
+  background-color: transparent;  
+}
+var, .var { /* stuff that should be filled in */
+  font-style: italic;
+  background-color: #ddd;
+  color: inherit;
+}
+dfn {
+  font-style: italic;
+}
+
+
+@media print {
+  abbr[title], acronym[title] {
+    border-bottom-width: 0;
+  }
+}
+/*@import url("mobile") handheld;*/

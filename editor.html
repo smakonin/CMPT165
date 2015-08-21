@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Real-time HTML Editor</title>
+<script type="text/javascript">
+
+var htmlH = 
+	'<html class="expand close">' +
+	'<head>' +
+	'<style type="text/css">' +
+	'.expand { width: 100%; height: 100%; }' +
+	'.close { border: none; margin: 0px; padding: 0px; }' +
+	'html,body { overflow: hidden;}' +
+	'<\/style>' +
+	'<\/head>' +
+	'<body class="expand close" onload="document.f.ta.focus(); document.f.ta.select();">' +
+	'<form class="expand close" name="f">' +
+	'<textarea class="expand close" style="background: #def; font: 14pt Monospace;" name="ta" wrap="hard" spellcheck="false">' +
+	'<\/textarea>' +
+	'<\/form>' +
+	'<\/body>' +
+	'<\/html>';
+
+var htmlC = 
+	'<html class="expand close">' +
+	'<head>' +
+	'<style type="text/css">' +
+	'.expand { width: 100%; height: 100%; }' +
+	'.close { border: none; margin: 0px; padding: 0px; }' +
+	'html,body { overflow: hidden;}' +
+	'<\/style>' +
+	'<\/head>' +
+	'<body class="expand close">' +
+	'<form class="expand close" name="f">' +
+	'<textarea class="expand close" style="background: #fde; font: 14pt Monospace;" name="ta" wrap="hard" spellcheck="false">' +
+	'<\/textarea>' +
+	'<\/form>' +
+	'<\/body>' +
+	'<\/html>';
+
+var defaultH = '<!-- add HTML below -->\n<h1>Hello Word!</h1>';
+var defaultC = '/* add CSS below */\nh1 { color: green; }';
+
+var oldH = '';
+var oldC = '';
+
+function init()
+{
+  window.boxH.document.write(htmlH);
+  window.boxH.document.close();
+  window.boxH.document.f.ta.value = defaultH;
+  window.boxC.document.write(htmlC);
+  window.boxC.document.close();
+  window.boxC.document.f.ta.value = defaultC;
+  refresh();
+}
+
+function refresh()
+{
+  var textH = window.boxH.document.f.ta;
+  var textC = window.boxC.document.f.ta;
+  var d = window.output.document; 
+
+  if(oldH != textH.value || oldC != textC.value) 
+  {
+    oldH = textH.value;
+    oldC = textC.value;
+    d.open();
+    d.write('<style type="text/css">\n' + oldC + '\n<\/style>\n\n' + oldH);
+    d.close();
+  }
+
+  window.setTimeout(refresh, 150);
+}
+
+</script>
+</head>
+
+<frameset resizable="yes" rows="50%,*" onload="init();">
+  <frameset resizable="yes" cols="66%,*">
+  	<frame name="boxH" src="javascript:'';">
+  	<frame name="boxC" src="javascript:'';">
+  </frameset>
+  <frame name="output" src="javascript:'';">
+</frameset>
+
+</html>

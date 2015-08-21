@@ -1,0 +1,54 @@
+html {
+  margin: 0 0.15em;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+}
+body { 
+  margin: 0;
+  padding: 0;
+}
+a:link { color: #0054a6; }
+a:visited { color: #25316e; }
+a:active { color: #f00; }
+
+/* simplify common.css styles */
+img.illust {
+  display: none;
+}
+p.currentinfo {
+  padding: 0.5em;
+  font-size: smaller;
+  text-align: center;
+}
+
+
+/* simple mobile styling */
+
+h1 {
+  text-align: center;
+}
+ul#navlist {
+  font-size: smaller;
+  margin: 0.5em;
+  padding: 0;
+  border-width: 0;
+  text-align: center;
+}
+ul#navlist li {
+  display: inline;
+  padding: 0em 0.5em 0.25em 0.5em;
+  list-style-type: none;
+  margin: 0 0.25em;
+}
+div#footer {
+  text-align: center;
+  font-size: smaller;
+  padding: 0.25em 0;
+  border-top: #aaa 1px solid;
+}
+div#footer p {
+  margin: .25em 0 .25em 0;
+  padding: 0 1em;
+}
+

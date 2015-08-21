@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* normalize defaults */
+html, head, body, 
+h1, h2, h3, h4, h5, h6, 
+div, span, p, blockquote, code, img, a,
+table, caption, tr, thead, th, tbody, td,
+ul, ol, li, label, form, fieldset {
+
+	line-height: 1.1em;
+	font: 100% Arial, Helvetica, sans-serif;	
+}
+
+body{
+	border-top: 20px  #b5111b solid; /*change top border color here */
+	margin: 0 0 0 0;
+	color: #333;
+}
+	
+#page{
+	width:800px;
+	background-color:#FFF;	
+	text-align: left;
+	display: block;
+	margin: 40px auto 10px auto;
+}
+
+p, em {  
+	font-size: 13px;
+	color: #404040;
+	line-height: 1.2em;
+    text-align: justify;
+}
+
+img {
+ 	border: 0px;
+}
+
+/*course name page title */
+#name p{	
+	float: left;
+	margin: 0;
+	padding: 16px 0 0 0;
+	color: #404040;
+	text-transform: capitalize;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/* h1- for page name ie. syllabus, schedule, problem sets */
+h1{
+    font-size: 1.2em;
+	color: #6D121F;
+	font-weight: bold;
+	margin: 1em 0 3px 0;
+	text-transform:uppercase;
+}
+
+/* h2 - red subheader for content of page*/
+h2{
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #6D121F;
+	margin-top: 1em;
+	line-height: 1.25em;
+	padding: 10px 0 0px 0px;
+    text-transform:uppercase;
+}
+
+/*h3 - sub-subheader, grey, to be also used in footer */
+h3{
+	font-size: 0.85em;
+	font-weight: bold;
+	line-height: 6px;
+	color: #404040;
+    /*text-transform:uppercase;*/
+}
+
+a{
+	font-size: 13px;
+	color: #b5111b;
+	text-decoration: none;
+
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.regular{
+	font-size: .9em;
+	color: #404040;
+	font-weight: normal;
+}
+	
+
+/*Horizontal Rules*/
+hr{ 
+	height: 2px;
+	color: #666;
+	background-color:#666;
+	float: left;
+	border: none;
+	width:100%;
+}
+
+hr.dotted{
+	border-top-width: thin;
+	border-top-style: dotted;
+	border-top-color: #999999;
+	background-color: #FFF;
+	color: #000;
+	margin:  10px 0 0px 0;
+}
+
+
+/*CONTENT */
+#header{
+	width: 800px;
+}
+
+#detailsLeft{
+	width: 390px;
+	display: inline;
+	float: left;
+	height: 140px;
+	padding-left: 10px;
+	margin-top: 15px;
+}
+
+#detailsRight{
+	width: 390px;
+	display: inline;
+	float: left;
+	height: 140px;
+	padding-left: 10px;
+	margin-top: 15px;
+}
+
+.info{
+	float:left;
+	padding: 0px 10px 0px 10px;
+	width: 240px;
+}
+
+#desc{
+	width: 790px;
+	display: inline;
+	text-align: left;
+	float: left;
+	padding-left: 10px;
+}
+
+#sch{
+	width: 600px;
+	display: block;
+	text-align: left;
+	padding: 5px 0 0 10px;
+}
+
+#content{
+	width: 780px;
+	display: block;
+	text-align: left;
+	padding-left: 10px;
+	float: left;
+}
+
+#content a, #content ul, #content ol {
+	font-size: 13px;
+}
+
+/*FOOTER*/
+#footer{
+	width: 800px;
+	display: inline;
+	float: left;
+}
+
+#footer .hr{
+	margin: 0 0 0px 0;
+}
+
+#footer hr.last{
+	margin: 0;
+	padding: 0;
+}
+
+#footer a{ font-size: 11px; color: #404040;}
+
+#footer a:hover{ color: #404040;}
+
+.sfu{
+	float: left;
+    margin-left: -63px !important;    margin-top: -30px !important;
+    -webkit-transform: scale(0.25) !important;
+    -ms-transform: scale(0.25) !important;
+    transform: scale(0.25) !important;
+}
+
+.left{
+	width: 300px;
+	padding-left: 0px;
+	float:left;
+	margin: 6px 0 0 -60px;
+}
+.right{
+	float: right;
+	padding: 0 0px 0 0;
+	color: #404040;
+	margin: 6px 0 0 0;
+}
+
+.clear {
+	display: block;
+    height: 10px;
+    clear: both;
+}
+
+.sborder {font-size:13px;color:#404040;width:100%;border-width: 1px;border-color: #999999;border-collapse: collapse;}
+.sborder th {font-size:13px;font-weight: bold;background-color:#ffffff;border-width: 1px;padding: 8px;border-style: solid;border-color: #999999;text-align:left;}
+.sborder tr {background-color:#ffffff;}
+.sborder td {font-size:13px;border-width: 1px;padding: 8px;border-style: solid;border-color: #999999;}
+/*.sborder tr:hover {background-color:#6D121F;}*/
+
+table td td {
+    padding-right: 7px;
+    padding-left: 7px;
+    font-size: 13px;
+    color: #404040;
+    white-space: nowrap;
+}
+
+.td-num {
+    text-align:right;
+}
+
+.td-tl {
+    border-top-width: thin;
+    border-color: #999999;
+    border-top-style: solid;
+    border-bottom-style: double;    
+}
+
+.bottom {
+    padding-left: 14px;
+    vertical-align: bottom;
+}

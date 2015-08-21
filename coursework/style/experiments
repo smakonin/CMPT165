@@ -1,0 +1,212 @@
+/* overall page styling */
+
+html {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+  text-align: justify;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.4em;
+}
+body { 
+  margin: 0;
+  padding: 0;
+}
+a:link { color: #0054a6; }
+a:visited { color: #25316e; }
+a:active { color: #b5111b; }
+
+/* h1,h2,h3,h4,h5,h6 { font-family: "Trebuchet MS", "Trebuchet", "Helvetica", sans-serif; } */
+
+
+/* header and menu */
+
+div#top, div#header{
+  background-color: #54534a;
+  color: #fff;
+  margin: 0;
+  padding: 1.5em 0 0 0;
+}
+
+h1 {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.navlist {
+  font-size: smaller;
+  font-family: "Trebuchet MS", "Trebuchet", "Helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  text-align: center;
+  padding: 4em 0 0.25em 0;
+}
+ul.navlist li {
+  display: -moz-inline-box;
+  display: inline-block;
+  .display: inline; /* dot hack for IE 6/7: http://www.danielbergey.com/weblog/2007/07/03/targeting-ie7-with-css-rules/ */
+  width: 10%;
+  padding: 0em 0.5em 0.25em 0.5em;
+  .padding: 4em 0.5em 0.25em 0.5em; /* dot hack for IE 6/7 */
+  list-style-type: none;
+  margin: 0 0.5em;
+  font-weight: normal;
+  overflow: visible;
+}
+ul.navlist li a {
+  position: relative; /* for IE, which sucks http://cssbeauty.com/skillshare/discussion/1634/some-links-not-clickable-in-ie-6/ */
+  margin: 0;
+  padding: 50px 5px 0 5px;
+  color: #ccc;
+  text-decoration: none;
+  font-style: normal;
+  border: 1px solid #555;
+}
+ul.navlist li#mycategory a {
+  color: #fff;
+}
+
+ul.navlist li.navindex a {
+  background: url("images/index.png") no-repeat top center;
+}
+ul.navlist li.navadmin a {
+  background: url("images/admin.png") no-repeat top center;
+}
+ul.navlist li.navreferences a {
+  background: url("http://www2.cs.sfu.ca/CourseCentral/165/ggbaker/style/images/references.png") no-repeat top center;
+}
+ul.navlist li.navtools a {
+  background: url("http://www2.cs.sfu.ca/CourseCentral/165/ggbaker/style/images/tools.png") no-repeat top center;
+}
+ul.navlist li.navtech a {
+  background: url("images/tech.png") no-repeat top center;
+}
+ul.navlist li.navmaterial a {
+  background: url("images/material.png") no-repeat top center;
+}
+ul.navlist li.navlinks a {
+  background: url("images/links.png") no-repeat top center;
+}
+ul.navlist li.navlabs a {
+  background: url("http://www2.cs.sfu.ca/CourseCentral/165/ggbaker/style/images/labs.png") no-repeat top center;
+}
+ul.navlist li.navassign a {
+  background: url("images/assign.png") no-repeat top center;
+}
+ul.navlist li.navsections a {
+  background: url("images/sections.png") no-repeat top center;
+}
+ul.navlist li.navcommon a {
+  background: url("images/index.png") no-repeat top center;
+}
+ul.navlist2 {
+  margin-top: -0.5em;
+}
+
+/* page body */
+
+div#main {
+  margin: 0;
+  padding: 1em 10%;
+}
+
+h2 {
+  font-size: 160%;
+  text-align: center;
+  margin-top: 0.33em;
+  clear: both;
+}
+div.h2 {
+  margin: 1em -0.5em 1em -0.5em;
+  padding: 0em 0.5em 0.25em 0.5em;
+  border: 3px solid #aaa;
+}
+
+h3 {
+  margin: 1.5em 0 1em 0;
+  padding: 0;
+}
+p.currentinfo {
+  text-align: center;
+}
+ul {
+  margin: 1em 2em;
+  padding: 0;
+}
+li {
+  margin: 0.2em 0;
+  padding: 0;
+}
+li>ul {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+dt {
+  font-weight: bold;
+  margin: 0.2em 0 0 0;
+  padding: 0;
+}
+dd {
+  margin: 0 2em 0 2em;
+  padding: 0;
+}
+dl.sub {
+  margin: 0 1em;
+}
+code {
+  text-align: left !important;
+}
+
+
+/* footer */
+
+div#footer {
+  background-color: #54534a;
+  text-align: center;
+  font-size: smaller;
+  color: #ccc;
+  padding: 0.25em 0;
+}
+div#footer p {
+  margin: .25em 0 .25em 0;
+  padding: 0 1em;
+}
+div#footer a {
+  color: #aaa;
+}
+
+
+/* print adjustments */
+
+@media print {
+  ul.navlist {
+    display: none;
+  }
+  div#main {
+    margin: 0;
+    padding: 1em;
+  }
+
+  /* trim up some margins to save space */
+  html {
+    line-height: 1em;
+  }
+  h2 {
+    margin: 1em -0.32em 0.25em -0.32em;
+  }
+  h3 {
+    margin: 1em 0 1em 0;
+    padding: 0;
+  }
+  li, li>ul, dt {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
+
+
+

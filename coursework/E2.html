@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CMPT 165 Lab 2</title>
+<link rel="stylesheet" href="common.css" title="Common" type="text/css" media="all" id="style-common" />
+</head>
+<body>
+<div id="header">
+<h1><abbr title="Computing Science" class="obvious">CMPT</abbr> 165 Lab 2</h1>
+<h1>&nbsp;</h1>
+</div>
+
+<div id="main">
+
+<p>
+This lab is designed to get you working more with <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> and to get you started with <abbr title="Cascading Style Sheets" class="obvious">CSS</abbr>.
+</p>
+
+<ol class="labsteps">
+<li>
+  <p>
+  Save <a href="files/lab2.html">this empty <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> page</a> as a starting point for your work on this lab.  (Again, don't use Internet Explorer for this.)  Open it in a text editor.
+  You will need some content for the file.  Have a look at the following short set of instructions&mdash;we will create a web page containing these instructions.
+  </p>
+  <div class="figure">
+  <img src="files/2-content.png" alt="sample content for page" width="376" height="144" />
+  <div class="caption">Figure 1: Content for the page</div>
+  </div>
+</li>
+<li>
+  <p>
+  As usual, start by filling in the <code class="html">&lt;title&gt;</code> and add an <code class="html">&lt;h1&gt;</code> that both contain the same title.  (Make up a reasonable title for such a page.)
+  </p>
+</li>
+<li>
+  <p>
+  Now, fill in the rest of the content, as seen in the figure above.  As always, you don't have to worry about the <em>appearance</em> in the <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> (or where the line breaks are): just pick tags that correspond to the <em>type</em> of content.
+  </p>
+  <p>
+  For example, the first words on the page are (part of) a paragraph, so they should go in a <code class="html">&lt;p&gt;</code>.  You should have a look through the <a href="/CC/165/common/ref/wdgxhtml10/index.html"><abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> reference</a> as you're doing this.
+  </p>
+  <p>
+  In particular, look at the reference pages for <a href="/CC/165/common/ref/wdgxhtml10/lists/ol.html"><code class="html">&lt;ol&gt;</code></a> (and the <a href="/CC/165/common/ref/wdgxhtml10/lists/li.html"><code class="html">&lt;li&gt;</code>s</a> that it contains) and <a href="/CC/165/common/ref/wdgxhtml10/phrase/em.html"><code class="html">&lt;em&gt;</code></a> for the emphasized word in the last sentence.
+  </p>
+</li>
+<li>
+  <p>
+  Open the <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> page in your browser.  It won't look like the figure above, but someone reading it should get the same information.  That's all we're concerned about in the <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr>.
+  </p>
+</li>
+<li>
+  <p>
+  Save <a href="files/lab2-style.css">this sample <abbr title="Cascading Style Sheets" class="obvious">CSS</abbr> file</a> in the <em>same directory</em> as the <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> file you have been working on.  Add this inside the <code class="html">&lt;head&gt;</code> of your <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> file, so it uses the stylesheet:
+  </p>
+  <div class="blockcode">
+  <code class="html">&lt;link rel="stylesheet" href="lab2-style.css" type="text/css" /&gt;</code>
+  </div>
+</li>
+<li>
+  <p>
+  Reload the page in your browser.  It should now look much more like the figure above.
+  </p>
+</li>
+<li>
+  <p>
+  Modify the stylesheet so that the <code class="html">&lt;h1&gt;</code> has&#8230;
+  </p>
+  <ul>
+  <li>a black <a href="/CC/165/common/ref/wdgcss/color-background/background-color.html">background</a> (colour code <code class="css">#000</code>)</li>
+  <li>a light blue <a href="/CC/165/common/ref/wdgcss/color-background/color.html">text colour</a>, to match the background colour (colour code <code class="css">#aaf</code>).</li>
+  </ul>
+</li>
+<li>
+  <p>
+  On the course web server, create a directory <code class="file">lab2</code> in your <code class="file">public_html</code> directory.
+  </p>
+  <p>
+  Upload <strong>both</strong> the <code class="file">.html</code> and <code class="file">.css</code> files to the <code class="file">lab2</code> directory you just created.  Check to make sure that the page works on the server and still looks the same.  The <abbr title="Uniform Resource Locator">URL</abbr> will be something like:
+  </p>
+  <div class="blockcode">
+  <code class="url">http://cmpt165.csil.sfu.ca/~<var>userid</var>/lab2/lab2.html</code>
+  </div>
+  <p>
+  Remember that <abbr title="Uniform Resource Locator">URL</abbr>s are <strong>case sensitive</strong>.  So, whether you named the directory <code class="file">lab2</code> or <code class="file">Lab2</code> (and your file <code class="file">lab2.html</code> or <code class="file">Lab2.html</code>) matters.
+  </p>
+  <p>
+  We suggest you organize your files this way throughout the course: create a new directory for each lab exercise and assignment.
+  </p>
+</li>
+
+</ol>
+
+<p>
+When you're done, submit the <abbr title="Uniform Resource Locator">URL</abbr> of the page (that you visited in the last step) to <a href="https://courses.cs.sfu.ca/">CourSys</a>.
+</p>
+
+</div>
+<div id="footer">
+<p id="footlink">Return to <a href="../index.html">Home</a>.</p>
+<p id="footcopy"><a href="http://www2.cs.sfu.ca/~ggbaker/copyright">Copyright</a> &copy; <a href="http://www2.cs.sfu.ca/~ggbaker/" rel="author">Greg Baker</a>, last modified 2012-01-05.</p>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CMPT 165 Assignment 1</title>
+<link rel="stylesheet" href="common.css" title="Common" type="text/css" media="all" id="style-common" />
+</head>
+<body>
+<div id="header">
+<h1><abbr title="Computing Science" class="obvious">CMPT</abbr> 165 Assignment 1</h1>
+<h1>&nbsp;</h1>
+</div>
+
+<div id="main">
+
+<p>
+In this assignment, you will create a web page containing a <a href="http://en.wikipedia.org/wiki/Blog">blog</a>.  Typically, blogs are created by software that arranges stories, moves stories into archives, keeps track of comments, and so on.  Your page will just be a static <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> file.
+</p>
+<p>
+Of course, blog software has to produce <abbr title="HyperText Markup Language" class="obvious">HTML</abbr> or <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> out of whatever data it stores.  This assignment is basically to do the blog software's job, without the interactive part: <strong>create the <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> code for the front page of a blog</strong>.  Your site will not be interactive and you'll only be creating the front page, not the story or comment pages.
+</p>
+<p>
+For example, when you're done, the page <em>might</em> look like this:
+</p>
+<div class="figure">
+<img src="files/a2-blog.png" alt="sample blog screenshot" width="401" height="325" />
+</div>
+
+<div class="h2" id="div-markup">
+<h2 id="markup"><span class="htext">Part 1: Markup</span></h2>
+
+<p>
+<strong>Create an <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> page</strong> representing the front page of a blog.  As usual, worry only about content at this point: we will create stylesheets later.
+</p>
+<p>
+You can use the content from the screenshot above if you want.  You can also make up your own blog content, but the general parts should be the same: title, link lists, stories/posts.  If you want to use the content from the screenshot above, the <a href="files/a2-text.txt">text from the example page</a> can be downloaded, just to save you some typing.
+</p>
+<p>
+Your <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> must be valid <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> 1.0 Strict.  As usual, you should use tags to match the <em>meaning</em> of the content.
+</p>
+
+
+</div>
+<div class="h2" id="div-style">
+<h2 id="style"><span class="htext">Part 2: Stylesheets</span></h2>
+
+
+<p>
+You will <strong>create two different external stylesheets</strong> for your page.  The point here is that the content in the <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> file should be independent of its appearance.  You <strong>must</strong> use the same <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> (no changes) with both stylesheets.
+</p>
+<p>
+You may have to go back and edit your <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> while creating the stylesheets.  In theory, you should only have to add some <code class="html">class</code> and <code class="html">id</code> attributes, or some <code class="html">&lt;div&gt;</code> tags.
+</p>
+<p>
+We will be looking for a reasonable level of difficulty in the stylesheets.  In particular, you should do some positioning of elements on the page (typically starting with the <a href="/CC/165/common/ref/wdgcss/box/float.html"><code class="css">float</code></a> or <a href="http://www.devguru.com/Technologies/css/quickref/css_position.html"><code class="css">position</code></a> properties).
+</p>
+<p>
+The two stylesheets must be reasonably different: you should do more than just change some colours or fonts between the two.  Try for an overall different layout.  This task is somewhat similar to the <a href="/CC/165/common/styledemo/">stylesheets that are available for the course website</a>: each uses the same markup, but they have very different structures.
+</p>
+<p>
+<strong>You do not have to make the page look like the screenshot above</strong>.  It is provided only as a general example of what a blog looks like.
+</p>
+<p>
+Use the <a href="http://jigsaw.w3.org/css-validator/"><abbr title="Cascading Style Sheets" class="obvious">CSS</abbr> validator</a> to make sure your <abbr title="Cascading Style Sheets" class="obvious">CSS</abbr> files are valid stylesheets.
+</p>
+
+
+</div>
+<div class="h2" id="div-submit">
+<h2 id="submit"><span class="htext">Submitting</span></h2>
+
+<p>
+You can can only submit one <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr>. It is possible to have two distinct stylesheets for a <em>single</em> <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> file.  The code for doing it is like this:
+</p>
+<div class="blockcode">
+<code class="html">
+&lt;link rel="stylesheet" href="style1.css" title="Style 1" type="text/css" media="all" /&gt;<br />
+&lt;link rel="alternate stylesheet" href="style2.css" title="Style 2" type="text/css" media="all" /&gt;</code>
+</div>
+<p>
+In Firefox, you can choose which stylesheet to use by selecting View &#8594;&nbsp;Page Style.  [You can try that on any page on the course website: there are several stylesheets available.]
+</p>
+
+<p>
+When you're done, upload your files and submit the <abbr title="Uniform Resource Locator">URL</abbr> of the <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> page to <a href="https://courses.cs.sfu.ca/">CourSys</a>.
+</p>
+
+</div>
+</div>
+<div id="footer">
+<p id="footlink">Return to <a href="../index.html">Home</a>.</p>
+<p id="footcopy"><a href="http://www2.cs.sfu.ca/~ggbaker/copyright">Copyright</a> &copy; <a href="http://www2.cs.sfu.ca/~ggbaker/" rel="author">Greg Baker</a>, last modified 2012-01-05.</p>
+</div>
+</body>
+</html>
+
+

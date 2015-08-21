@@ -1,0 +1,16 @@
+/************ Style rules at start of demo ************/
+
+body {
+	width: 860px;
+	text-align: justify;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h1, h2, h3 {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+img {
+	width: 100%;
+}

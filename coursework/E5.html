@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CMPT 165 Lab 5</title>
+<link rel="stylesheet" href="common.css" title="Common" type="text/css" media="all" id="style-common" />
+</head>
+<body>
+<div id="header">
+<h1><abbr title="Computing Science" class="obvious">CMPT</abbr> 165 Lab 5</h1>
+<h1>&nbsp;</h1>
+</div>
+
+<div id="main">
+
+<p>
+This lab is designed to make you think more about the details of how formatting can be done with <abbr title="Cascading Style Sheets" class="obvious">CSS</abbr>.
+The questions in this lab were inspired by <a href="http://css.maxdesign.com.au/listamatic/">css.maxdesign's Listamatic</a>, which contains dozens of styles for simple <abbr title="HyperText Markup Language" class="obvious">HTML</abbr> lists.
+</p>
+<p>
+You will definitely need the <a href="/CC/165/common/ref/wdgcss/index.html"><abbr title="Cascading Style Sheets" class="obvious">CSS</abbr> Reference</a> for this lab.
+</p>
+
+<!-- question about div/span? -->
+<ol class="labsteps">
+<li>
+<p>
+Save this <a href="files/lab5-list.html">unstyled <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> file</a>.
+<strong>Create a stylesheet</strong> for this page.  You will be styling only the menu list&mdash;the other list should remain unchanged.
+</p>
+<ul>
+  <li> Make the menu list <a href="/CC/165/common/ref/wdgcss/box/float.html"><code class="css">float</code></a> to the left. Give it a <a href="/CC/165/common/ref/wdgcss/box/width.html"><code class="css">width</code></a> of <code class="css">6em</code>. Give the <code class="html">&lt;div id="main"&gt;</code> a left margin of <code class="css">7em</code>, so it stays to the right of the menu. </li>
+  <li> Remove the bullets from the menu items by using the <a href="/CC/165/common/ref/wdgcss/classification/list-style-type.html"><code class="css">list-style-type</code></a> property.  You will need to use a <a href="/CC/165/common/guide/html/sec-select.html">contextual selector</a> to get at those list items: <code class="css">ul#menu&nbsp;li</code> .
+  </li>
+  <li> Set the colours and spacing of the elements so it looks something like the screenshot below. </li>
+  <li> Hint 1: The list items are coloured by assigning a background colour and thick left and right <a href="/CC/165/common/ref/wdgcss/box/border.html">borders</a>, and removing top and bottom borders (by setting their width to zero).  The colours used in the screenshot are <code class="css">#44a</code>, <code class="css">#aac</code>, and <code class="css">#ccf</code>. </li>
+  <li> Hint 2: Whenever you're working on the spacing of elements, start by setting <strong>both</strong> the margin and padding to zero (for both the <code class="html">&lt;ul&gt;</code> and its <code class="html">&lt;li&gt;</code>s in this case).  This will give you a predictable starting point by removing any browser defaults.  Add margins and padding from there as needed.
+  <div class="blockcode">
+  <code class="css">margin: 0;<br />padding: 0;</code>
+  </div>
+  </li>
+</ul>
+<p>
+You shouldn't be concerned about making your page look <em>exactly</em> like the screenshot, but it should be close.  
+</p>
+<div class="figure">
+<img src="files/lab5-style1.png" class="screenshot" alt="screenshot for question 2" width="567" height="216" />
+</div>
+</li>
+
+<li>
+<p>
+Make another copy of the <a href="files/lab5-list.html">unstyled <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> file</a> (with a different file name, obviously).  <strong>Create another stylesheet</strong> for this page. (You should upload both <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> pages and both <abbr title="Cascading Style Sheets" class="obvious">CSS</abbr> files when you're done.)
+</p>
+<ul>
+  <li> Position the list items in the menu list on one line by setting the <a href="/CC/165/common/ref/wdgcss/classification/display.html"><code class="css">display</code></a> property on the <code class="html">&lt;li&gt;</code>s to <code class="css">inline</code>.  Remove the bullets from this list as well. </li>
+  <li> Set the borders around the <code class="html">&lt;li&gt;</code>, and the <em>bottom</em> border for the <code class="html">&lt;ul&gt;</code>, as you see in the screenshot.  Set the background colour and margins/padding as well.  The colours used in the screenshot are <code class="css">#ccc</code> and <code class="css">#eef</code>. </li>
+  <li> Give the &#8220;current&#8221; menu item a different background colour, as in the screenshot. </li>
+  <li> Remove the underline (<code class="css">text-decoration</code>) from the links in the menu, and set their colour to black. </li>
+</ul>
+
+<div class="figure">
+<img src="files/lab5-style2.png" class="screenshot" alt="screenshot for question 3" width="567" height="187" />
+</div>
+</li>
+</ol>
+
+<p>
+When you're done, upload the files from this lab to the course web server.  Submit the <abbr title="Uniform Resource Locator">URL</abbr>s of the pages you created to <a href="https://courses.cs.sfu.ca/">CourSys</a>.
+</p>
+
+</div>
+<div id="footer">
+<p id="footlink">Return to <a href="../index.html">Home</a>.</p>
+<p id="footcopy"><a href="http://www2.cs.sfu.ca/~ggbaker/copyright">Copyright</a> &copy; <a href="http://www2.cs.sfu.ca/~ggbaker/" rel="author">Greg Baker</a>, last modified 2012-01-05.</p>
+</div>
+</body>
+</html>
+
+

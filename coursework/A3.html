@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CMPT 165 Assignment 3</title>
+<link rel="stylesheet" href="common.css" title="Common" type="text/css" media="all" id="style-common" />
+</head>
+<body>
+<div id="header">
+<h1><abbr title="Computing Science" class="obvious">CMPT</abbr> 165 Assignment 3</h1>
+<h1>&nbsp;</h1>
+</div>
+
+<div id="main">
+
+<p>
+<img src="files/dicehand.jpeg" alt="Dice in a hand" class="illust" />
+In this assignment, you will create an interactive web page using Python web scripts.  The pages you create will implement a simple &#8220;dice&#8221; game.
+</p>
+<p>
+The game itself is very simple:
+</p>
+<ol>
+<li><p>
+The user guesses the total of the dice that will be thrown.
+</p></li>
+<li><p>
+Five dice are thrown, and the total added up.
+</p></li>
+<li><p>
+If the total is <em>at least</em> the value the user guessed, they win.
+</p></li>
+</ol>
+<p>
+This &#8220;game&#8221; will be played online.  If you're not clear on how the game is played (or of any other details later on), have a look at an 
+<a href="http://cmpt165.csil.sfu.ca/~ggbaker/demos/dice-total/">example working dice game</a>.
+</p>
+<p>
+Be sure to test your (partially completed) game regularly: at <em>least</em> after each of these steps.
+</p>
+
+
+<div class="h2" id="div-form">
+<h2 id="form"><span class="htext">Step 1: The Form</span></h2>
+
+
+<p>
+Create an <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> form that asks the user for their name and their guess for the total of the dice.  It should also have a submit button.
+</p>
+<p>
+The &#8220;action&#8221; of this form should be the Python program you create in the next step.
+</p>
+
+
+</div>
+<div class="h2" id="div-progr">
+<h2 id="progr"><span class="htext">Step 2: Program Basics</span></h2>
+
+
+<p>
+Create a Python web script that reads the input from the form in the previous step.  Start by generating these fragments of the output (replacing the values the user entered and wrapping it in appropriate <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> markup, of course):
+</p>
+<div class="blockcode">
+<code class="out">Thanks for playing, <var>Name</var>.<br />
+You bet the total would be at least <var>value</var>.</code>
+</div>
+<p>
+You can add the code for the later steps into this skeleton.
+</p>
+
+</div>
+<div class="h2" id="div-roll">
+<h2 id="roll"><span class="htext">Step 3: Rolling the Dice</span></h2>
+
+<p>
+Rolling dice is basically a way to generate random numbers from 1 to 6.  We can simulate this with a computer program by just coming up with some randomly generated numbers.  Before you can do this, you will have to import the Python module that contains random number functions:
+</p>
+<div class="blockcode">
+<code class="python">import random</code>
+</div>
+<p>
+Then to generate a random number from <code class="python">a</code> to <code class="python">b</code>, use its <code class="python">randint</code> function:
+</p>
+<div class="blockcode">
+<code class="python">die = random.randint(a,b)</code>
+</div>
+<p>
+Use this function to generate the values of the five dice.  Just print out the numbers for now&mdash;we will worry about the dice images later.  Add up the values of the dice and produce this part of the output:
+</p>
+<div class="blockcode">
+<code class="out">The total rolled was <var>total</var>.</code>
+</div>
+
+<p>
+(You can do the next two steps in either order.)
+</p>
+
+
+</div>
+<div class="h2" id="div-win">
+<h2 id="win"><span class="htext">Step 4: Winning and Losing</span></h2>
+
+
+<p>
+You should now have both the value the user guessed and the total of the dice in separate variables.  If the total of the dice is greater than or equal to the user's guess, they win.  Use an <code class="python">if</code> statement to output whichever of these statements is appropriate:
+</p>
+<div class="blockcode">
+<code class="out">You won!<br />
+Sorry, you lost.</code>
+</div>
+
+</div>
+<div class="h2" id="div-dice">
+<h2 id="dice"><span class="htext">Step 5: Dice Images</span></h2>
+
+
+<p>
+If you are generating the random numbers and just printing them (as suggested above), you should at this point be able to tell that your game is working: random numbers from 1 to 6 are generated, and they are added up to get the total.  But, it doesn't <em>look</em> like a dice game yet.
+</p>
+<p>
+Fortunately, once we have the random numbers, displaying the corresponding images is fairly easy.  Remember: we're generating <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> in the program, and all you have to do to display an image in <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> is use the <code class="html">&lt;img&gt;</code> tag.
+</p>
+<p>
+You can <a href="A3-img.html">download and use the provided dice images</a>.
+</p>
+<p>
+If the random number generated is 2, you would want to create <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> like this:
+</p>
+<div class="blockcode">
+<code class="html">&lt;img src="dice-2.gif" alt="2" width="107" height="107" /&gt;</code>
+</div>
+<p>
+So, for each die, you need to generate the random number (which you should already be doing), and then <code class="python">print</code> a line like the above with the generated number substituted in the file name and alt text.
+</p>
+
+</div>
+<div class="h2" id="div-valid">
+<h2 id="valid"><span class="htext">Validation</span></h2>
+
+
+<p>
+The <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> code that your program generates should be valid <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr>.  You can check this in one of two ways.
+</p>
+<p>
+When your game is online and functioning, you can copy and paste the <abbr title="Uniform Resource Locator">URL</abbr> with the query string to the validator.  In the working example, the <abbr title="Uniform Resource Locator">URL</abbr> would be something like this:
+</p>
+<div class="blockcode">
+<code class="url">http://cmpt165.csil.sfu.ca/~ggbaker/demos/dice-total/dice.py?name=Your%20Name&amp;value=20</code>
+</div>
+<p>
+The other option is to play the game, view the page source in your browser, and copy and paste this into the &#8220;enter <abbr title="HyperText Markup Language" class="obvious">HTML</abbr> code directly&#8221; option in a validator.
+</p>
+
+
+</div>
+<div class="h2" id="div-submit">
+<h2 id="submit"><span class="htext">Submitting</span></h2>
+
+<p>
+Upload all of your files to the course web server: <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> and Python, with all images and stylesheets.  Test the game on the server to make sure it's working.
+</p>
+<p>
+When you're done, submit the <abbr title="Uniform Resource Locator">URL</abbr> of the front <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> page (with the form) to the <a href="https://courses.cs.sfu.ca/">CourSys</a>.
+</p>
+
+</div>
+
+<p>
+The dice images have been converted from <abbr title="Scalavle Vector Graphics">SVG</abbr> images distributed with <a href="http://projects.gnome.org/gnome-games/">Gnome Games</a>.  They can be redistributed under the terms of version 2 of the <a href="http://www.gnu.org/copyleft/gpl.html"><abbr title="GNU's Not Unix">GNU</abbr> General Public License</a> (and are for this assignment).  The <a href="http://www.istockphoto.com/file_closeup/recreation/gambling/dice/1230104_dice_in_hand.php?id=1230104">dice-in-hand image</a> is used with permission.
+</p>
+
+
+</div>
+<div id="footer">
+<p id="footlink">Return to <a href="../index.html">Home</a>.</p>
+<p id="footcopy"><a href="http://www2.cs.sfu.ca/~ggbaker/copyright">Copyright</a> &copy; <a href="http://www2.cs.sfu.ca/~ggbaker/" rel="author">Greg Baker</a>, last modified 2012-04-10.</p>
+</div>
+</body>
+</html>
+
+

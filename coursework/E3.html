@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CMPT 165 Lab 3</title>
+<link rel="stylesheet" href="common.css" title="Common" type="text/css" media="all" id="style-common" />
+</head>
+<body>
+<div id="header">
+<h1><abbr title="Computing Science" class="obvious">CMPT</abbr> 165 Lab 3</h1>
+<h1>&nbsp;</h1>
+</div>
+
+<div id="main">
+
+<p>
+This lab is designed to get you to work more with <abbr title="Cascading Style Sheets" class="obvious">CSS</abbr> and to get you to try a validator.
+</p>
+
+<ol class="labsteps">
+<li>
+<p>
+Either make a copy of your <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> from lab 2, or download the <a href="https://courses.cs.sfu.ca">file from the lab 2 solutions</a>. Don't overwrite your lab 2 work on the server: make sure you have a new copy.  [Note: do <strong>not</strong> use Internet Explorer for this or other work in this course: it mangles <abbr title="HyperText Markup Language" class="obvious">HTML</abbr> files it downloads.  Use <a href="/CC/165/common/sw#browser">Firefox or Safari</a> instead.]
+</p>
+<p>
+For this part, you will create a new stylesheet for this page.  Change the <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> file so it uses a stylesheet <code class="file">lab3-style.css</code> (instead of <code class="file">lab2-style.css</code>).
+</p>
+<p>
+Create a <abbr title="Cascading Style Sheets" class="obvious">CSS</abbr> file (<code class="file">lab3-style.css</code>) and make these changes to the appearance of the page:
+</p>
+  <ul>
+  <li>Set the background colour of the <code class="html">&lt;body&gt;</code> to light yellow (colour code <code class="css">#ff7</code>), and the text colour to black (colour code <code class="css">#000</code>).</li>
+  <li>Give the <code class="html">&lt;body&gt;</code> a margin of two times the font size (<code class="css">2em</code>).</li>
+  <li>Set the font of the <code class="html">&lt;h1&gt;</code> to a sans-serif font.</li>
+  <li>Give the <code class="html">&lt;h1&gt;</code> a thin black border.  You need to set the border's colour, line style, and thickness.</li>
+  <li>Change the background colour of the <code class="html">&lt;h1&gt;</code> to a lighter shade of yellow (colour code <code class="css">#ffa</code>).</li>
+  <li>Change the &#8220;numbering&#8221; of the list so it uses letters (A, B, C, &#8230;).  See the <code class="css">list-style-type</code> property in the reference. </li>
+  </ul>
+<p>
+You will probably want to look at the <a href="/CC/165/common/ref/wdgcss/index.html"><abbr title="Cascading Style Sheets" class="obvious">CSS</abbr> reference</a> as you do this.  With this <abbr title="Cascading Style Sheets" class="obvious">CSS</abbr> applied, the page should look <em>something</em> like this (depending on your browser, font size, window size, and other factors, of course).
+</p>
+<div class="figure">
+<img src="files/lab3-screen.png" alt="screenshot after lab 3 stylesheet" width="350" height="184" />
+</div>
+</li>
+<li>
+<p>
+Download this <a href="files/lab3-page.html">invalid <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> file</a> and <a href="files/null.png">the image from the page</a>.  Add the <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> 1.0 doctype to the start of this file:
+</p>
+<div class="blockcode">
+<code class="html">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</code>
+</div>
+<p>
+Run it through an <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> validator (<a href="/CC/165/common/validators">Validator Instructions</a>) and have a look at the error messages.  Fix the errors in the markup.  (When working with the validator, look at only the first error or two; fix them and try again.)
+</p>
+<p>
+Once the page validates with no errors, you're done.
+</p>
+</li>
+<li>
+<p>
+In your <code class="file">public_html</code> directory on the course web server, create a directory <code class="file">lab3</code>.  Upload all of the files from this lab to that directory.
+</p>
+</li>
+</ol>
+
+<p>
+Submit the <abbr title="Uniform Resource Locator">URL</abbr> of the pages you created to <a href="https://courses.cs.sfu.ca/">CourSys</a>.
+</p>
+
+</div>
+<div id="footer">
+<p id="footlink">Return to <a href="../index.html">Home</a>.</p>
+<p id="footcopy"><a href="http://www2.cs.sfu.ca/~ggbaker/copyright">Copyright</a> &copy; <a href="http://www2.cs.sfu.ca/~ggbaker/" rel="author">Greg Baker</a>, last modified 2012-01-05.</p>
+</div>
+</body>
+</html>
+
+

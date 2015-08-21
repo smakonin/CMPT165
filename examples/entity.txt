@@ -1,0 +1,15 @@
+Entity Examples
+
+When using the <img> tag both the scr="" & alt="" attributes need to be specified.
+
+Copyright 2014 by Stephen Makonin.
+
+Apple iPhone-TM or Apple iPhone-Registered TM
+
+Today will be sunny and partly cloudy with highs of 21-degrees-C.
+
+1-euro costs about $2.04 Canadian.
+
+I love big-pi and little-pi!
+
+China is written 中国.

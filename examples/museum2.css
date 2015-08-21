@@ -1,0 +1,47 @@
+.half, .left-half, .right-half, .figure {
+	width: 50%;
+}
+
+.left-half {
+	float: left;
+	padding-right: 1em;
+}
+
+.right-half, .figure {
+	float: right;
+	padding-left: 1em;
+}
+
+.caption {
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.caption span {
+	font-style: italic;
+}
+
+#content {
+	width: 640px;
+	float: left;
+}
+
+#sidebar {
+	width: 200px;
+	float: right;
+	left: 660px;
+	position: fixed;
+}
+
+#sidebar {
+	background: #eee;
+	padding: 10px;
+}
+
+#sidebar ul li {
+	margin: 0 0 0 20px;
+}
+
+p {
+	margin-top: 0em;
+}

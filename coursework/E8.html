@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CMPT 165 Lab 8</title>
+<link rel="stylesheet" href="common.css" title="Common" type="text/css" media="all" id="style-common" />
+</head>
+<body>
+<div id="header">
+<h1><abbr title="Computing Science" class="obvious">CMPT</abbr> 165 Lab 8</h1>
+<h1>&nbsp;</h1>
+</div>
+
+<div id="main">
+
+<p>
+This lab is intended to get you started with Python.
+</p>
+
+<ol class="labsteps">
+<li>
+<p>
+If you haven't already, <a href="/CC/165/common/sw#python">download and install</a> Python (version 2.7.x, <strong>not</strong> version 3).  (Of course, if you're working in a <a href="https://www.sfu.ca/computing/about/school-facilities/csil.html">lab on-campus</a> it's already installed.)
+</p>
+<p>
+Open up <acronym title="Integrated DeveLopment Environment">IDLE</acronym>. (In Windows, select Start  &#8594;&nbsp; Programs  &#8594;&nbsp; Python  &#8594;&nbsp; <acronym title="Integrated DeveLopment Environment">IDLE</acronym> (Python <acronym title="Graphical User Interface">GUI</acronym>).)  Create an editor window (where you type your programs) by selecting File  &#8594;&nbsp; New Window.  Also see <a href="/CC/165/common/python">instructions for using Python</a>.
+</p>
+<p>
+Type (or copy and paste) this code into the editor window.  Save it as <code class="file">first.py</code>.
+</p>
+<div class="blockcode">
+<code class="python">print "I'm a Python program."<br />
+print "Outta my way!"</code>
+</div>
+<p>
+Press F5 (or select Run  &#8594;&nbsp; Run Module) to run the program.
+</p>
+</li>
+<li>
+Modify <code class="file">first.py</code> so it prints this instead:
+<div class="blockcode">
+<code class="out">I'm a Python program.<br />
+This course is "CMPT 165".</code>
+</div>
+<p>
+In order to print the double quotes in the second line, you will have to use single quotes to enclose the string: <code class="python">'This course is "CMPT 165".'</code>
+</p>
+</li>
+<li>
+<p>
+Create a Python program <code class="file">webtest.py</code> that prints this (making sure there is a blank line after the first line):
+</p>
+<div class="blockcode">
+<code class="out">
+Content-type: text/html<br /><br />
+&lt;html&gt;<br />
+&lt;head&gt;<br />
+&lt;title&gt;Web Script&lt;/title&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+&lt;h1&gt;Web Script&lt;/h1&gt;<br />
+&lt;p&gt;I'm a dynamically generated web page.&lt;/p&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;</code>
+</div>
+<p>
+Check your program in <acronym title="Integrated DeveLopment Environment">IDLE</acronym> first to make sure it runs and prints text like the above.
+</p>
+<p>
+Upload this file to your web space on the course web server.  Visit the page in your web browser.  The <abbr title="Uniform Resource Locator">URL</abbr> will be something like this:
+</p>
+<blockquote><p>
+<code class="url">http://cmpt165.csil.sfu.ca/~<var>userid</var>/webtest.py</code>
+</p></blockquote>
+<p>
+The server is set up so that Python programs (<code class="file">.py</code> files) are executed and their output is sent to the browser.  (Compare <code class="file">.html</code> files, where the content of the file is sent as-is.)
+</p>
+</li>
+</ol>
+
+<p>
+For this exercise, you will <strong>submit the <code class="file">first.py</code> file</strong> itself and the <strong><abbr title="Uniform Resource Locator">URL</abbr> of the <code class="file">webtest.py</code></strong> page.  Submit the file and the <abbr title="Uniform Resource Locator">URL</abbr> to <a href="https://courses.cs.sfu.ca/">CourSys</a>.
+</p>
+<p>
+[It doesn't make sense to upload the <code class="file">first.py</code> file: it's not a web script, but the server would treat it like one since it's a Python program.]
+</p>
+
+</div>
+<div id="footer">
+<p id="footlink">Return to <a href="../index.html">Home</a>.</p>
+<p id="footcopy"><a href="http://www2.cs.sfu.ca/~ggbaker/copyright">Copyright</a> &copy; <a href="http://www2.cs.sfu.ca/~ggbaker/" rel="author">Greg Baker</a>, last modified 2014-05-01.</p>
+</div>
+</body>
+</html>
+
+

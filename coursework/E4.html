@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CMPT 165 Lab 4</title>
+<link rel="stylesheet" href="common.css" title="Common" type="text/css" media="all" id="style-common" />
+<style type="text/css" media="all">
+
+span.itword {
+  border: 1px dotted #555;
+  background-color: #ff9;
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+<div id="header">
+<h1><abbr title="Computing Science" class="obvious">CMPT</abbr> 165 Lab 4</h1>
+<h1>&nbsp;</h1>
+</div>
+
+<div id="main">
+
+<p>
+This lab is designed to get you thinking more about content over appearance and to work with entities in <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr>.
+</p>
+<p>
+This lab involves creating several small passages of <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr>.  <strong>Create a single <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> file</strong>, <code class="file">content.html</code> and put all of the parts in that file.
+</p>
+
+<ol class="labsteps">
+<li>
+<p>
+Consider the following sentences:
+</p>
+<blockquote>
+<p>
+Wow, it must be 40&#xb0; out there.  Can I get any ice cream for 75&#xa2;?
+</p>
+<p>
+All I remember is that &#x3c0; has something to do with circles, and that 3&nbsp;&lt;&nbsp;&#x3c0;&nbsp;&lt;&nbsp;4.  Do you understand any of that&#x203d;
+</p>
+</blockquote>
+<p>
+There are named <a href="/CC/165/common/ref/wdgxhtml10/entities/index.html"><abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> entities</a> for several of the special symbols: degrees, cents, Greek lowercase letter pi.
+</p>
+<p>
+The symbol at the end of the last sentence is an &#8220;interrobang&#8221; which combines an exclamation mark and a question mark: it is an obscure piece of punctuation sometimes used to indicate excitement  in a question.
+You'll have to use a numeric entity for it, which you can find with a <a href="http://www.fileformat.info/info/unicode/char/search.htm">Unicode character search</a> or <a href="http://unicodelookup.com/">Unicode lookup</a>.  [Your browser might not display the interrobang properly.  It's surprisingly hard to come up with a universally-supported symbol that doesn't have a named entity.]
+</p>
+<p>
+<strong>Add two paragraphs</strong> to your <code class="file">content.html</code> file that contain these sentences, with entities representing the special characters.
+</p>
+</li>
+<li>
+<p>
+Consider this passage, which you might want to mark up using <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr>:
+</p>
+<blockquote>
+<p>
+According to <span class="itword">Wikipedia</span>, there was <span class="itword">never</span> a version 1.0 of HTML. The <span class="itword">W3C</span> is the World Wide Web Consortium, and it defines HTML.
+</p>
+</blockquote>
+<p>
+Each of the highlighted words (&#8220;Wikipedia&#8221;, &#8220;never&#8221;, &#8220;W3C&#8221;) would typically be displayed in italics if this was in a book or other properly printed English text.  But, the three would be in italics for very different reasons: we can make the distinction in <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr>.
+</p>
+<p>
+Choose an <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> tag for each of the three words, according to their <em>meaning in that passage</em>.  Have a look at the reference pages for these tags and use each of them for <strong>one</strong> of the words, as appropriate: <a href="/CC/165/common/ref/wdgxhtml10/phrase/em.html"><code class="html">&lt;em&gt;</code></a>, <a href="/CC/165/common/ref/wdgxhtml10/phrase/dfn.html"><code class="html">&lt;dfn&gt;</code></a>, <a href="/CC/165/common/ref/wdgxhtml10/phrase/cite.html"><code class="html">&lt;cite&gt;</code></a>.
+</p>
+<p>
+Of course, you could use <abbr title="Cascading Style Sheets" class="obvious">CSS</abbr> to style each of these differently, but most visual browsers render them as italics by default.  <strong>Add a paragraph</strong> to your <code class="file">content.html</code> file that contains the above passage; mark it up as described above.  There is no need to create a stylesheet to make the words look like the above: this question is only about content. [Note that the default rendering of <code class="html">&lt;dfn&gt;</code> in Chrome isn't italic: that doesn't matter since we don't care about appearance here.]
+</p>
+
+</li>
+<li>
+<p>
+Finally, one last thing to add to your <code class="file">content.html</code> (just copy and paste this code into a paragraph):
+</p>
+<blockquote>
+<p>
+<code class="html">&lt;abbr title="eXtensible HyperText Markup Language"&gt;XHTML&lt;/abbr&gt; is used to describe the &lt;strong&gt;content&lt;/strong&gt; of web pages, not the appearance.  It looks like this: &lt;code&gt;&amp;lt;p&amp;gt; A paragraph &amp;lt;/p&amp;gt;&lt;/code&gt;.</code>
+</p>
+</blockquote>
+<p>
+Have a look at the tags used there.  For <a href="/CC/165/common/ref/wdgxhtml10/phrase/abbr.html"><code class="html">&lt;abbr&gt;</code></a>, the <code class="html">title</code> that contains the full-text is displayed as a <a href="http://en.wikipedia.org/wiki/Tooltip">tooltip</a> in Firefox.  The <a href="/CC/165/common/ref/wdgxhtml10/phrase/code.html"><code class="html">&lt;code&gt;</code></a> tag is used to indicate a segment of computer code (in this case, <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> code).
+</p>
+<p>
+<strong>That's all</strong>.  Just have a look at this <abbr title="eXtensible HyperText Markup Language" class="obvious">XHTML</abbr> code, learn a couple of new tags, and copy it into your <code class="file">content.html</code>.
+</p>
+</li>
+
+<li>
+<p>
+Make sure your <code class="file">content.html</code> is valid.
+</p>
+</li>
+</ol>
+
+<p>
+When you're done, upload the files from this lab to a directory <code class="file">lab4</code> on the course web server.  Submit the <abbr title="Uniform Resource Locator">URL</abbr> of the page you created to <a href="https://courses.cs.sfu.ca/">CourSys</a>.
+</p>
+
+</div>
+<div id="footer">
+<p id="footlink">Return to <a href="../index.html">Home</a>.</p>
+<p id="footcopy"><a href="http://www2.cs.sfu.ca/~ggbaker/copyright">Copyright</a> &copy; <a href="http://www2.cs.sfu.ca/~ggbaker/" rel="author">Greg Baker</a>, last modified 2012-01-05.</p>
+</div>
+</body>
+</html>
+
+
